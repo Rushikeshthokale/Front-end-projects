@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background: #1d4444; */
+  background-image: url(Currency.jpg);
+  background-repeat: no-repeat;
+  background-size: 220vh;
+}
+
+.convertor-container {
+  background-color: rgb(75, 211, 248);
+  border: 8px;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 44px 50px;
+  text-align: center;
+  border-radius: 19px;
+}
+
+.convertor-container h1 {
+  font-size: 28px;
+  color: #202124;
+  margin-bottom: 40px;
+}
+
+.convertor-container .input-container {
+  border: 2px solid #bbbbbd;
+  border-radius: 4px;
+  margin-block: 20px;
+}
+.convertor-container .input-container:focus-within {
+  border-color: #0056b3;
+}
+.convertor-container .input-container input,
+.convertor-container .input-container select {
+  width: 150px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.convertor-container .arrow {
+  transform: rotate(90deg);
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.convertor-container .result {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/* Responsive Code  */
+
+@media screen and (max-width: 420px) {
+  .convertor-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .convertor-container h1 {
+    font-size: 22px;
+  }
+  .convertor-container .input-container {
+    border: none;
+  }
+  .convertor-container .input-container input,
+  .convertor-container .input-container select {
+    border: 1px solid #ccc;
+    margin-block: 4px;
+    width: 100%;
+  }
+}
